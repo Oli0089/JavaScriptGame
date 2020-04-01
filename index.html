@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score-board" id="resetThis">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <div class="result">
+        <p>Paper cover rock. You win!</p>
+    </div>
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="rock.jpg" alt="">
+        </div>
+        <div class="choice" id="p">
+            <img src="paper.jpg" alt="">
+        </div>
+        <div class="choice" id="s">
+            <img src="scissors.jpg" alt="">
+        </div>
+    </div>
+    <p id="action-message">Make your move</p>
+    <script src="app.js" charset="utf-8"></script>
+    <div class="footer" id="m">
+        <form id="myForm">
+            <button id="myBtn" onclick="resetScore()" class="btn success">Reset</button>   
+        </form>     
+            <button id="myBtn2" onclick="showRules()" class="btn success">Rules</button>
+    </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#"><u>How to Play Rock Paper Scissors</u></a>
+          <a href="#">The game works by the user picking one of three options</a>
+          <a href="#">The computer will then pick an option and these options are compared</a>
+          <a href="#">For example. Rock beats Scissors, Scissors beats Paper and Paper beats Rock</a>
+        </div>
+      </div>
+</body>
+</html>
